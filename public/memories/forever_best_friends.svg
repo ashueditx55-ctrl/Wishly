@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Sky Twilight Gradient -->
+    <linearGradient id="twilightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B0764"/>
+      <stop offset="25%" stop-color="#701A75"/>
+      <stop offset="55%" stop-color="#BE185D"/>
+      <stop offset="80%" stop-color="#FB7185"/>
+      <stop offset="100%" stop-color="#FDE68A"/>
+    </linearGradient>
+
+    <!-- Horizon Sun Glow -->
+    <radialGradient id="horizonGlow" cx="50%" cy="100%" r="80%">
+      <stop offset="0%" stop-color="#FFFBEB" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#FDE047" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#F472B6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Hill Gradient -->
+    <linearGradient id="starlitHill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4C0519"/>
+      <stop offset="100%" stop-color="#1E030B"/>
+    </linearGradient>
+
+    <!-- Cherry Blossom Petals -->
+    <linearGradient id="petalPink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF1F2"/>
+      <stop offset="100%" stop-color="#FDA4AF"/>
+    </linearGradient>
+
+    <!-- Moon Glow -->
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF0" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#FEF08A" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FEF08A" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Filters -->
+    <filter id="celestialGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow5" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <!-- Twilight Sky -->
+  <rect width="800" height="600" fill="url(#twilightSky)"/>
+
+  <!-- Horizon Golden Radiance -->
+  <ellipse cx="400" cy="480" rx="360" ry="120" fill="url(#horizonGlow)" opacity="0.85"/>
+
+  <!-- Twinkling Stars in Upper Sky -->
+  <g fill="#FFF" opacity="0.85">
+    <circle cx="100" cy="80" r="1.5"/><circle cx="140" cy="140" r="2"/><circle cx="180" cy="60" r="1.5"/>
+    <circle cx="230" cy="110" r="2.5" filter="url(#celestialGlow)"/><circle cx="280" cy="70" r="1.5"/>
+    <circle cx="340" cy="130" r="2"/><circle cx="480" cy="80" r="2.5" filter="url(#celestialGlow)"/>
+    <circle cx="530" cy="140" r="1.5"/><circle cx="590" cy="90" r="2"/><circle cx="640" cy="130" r="2.5" filter="url(#celestialGlow)"/>
+    <circle cx="700" cy="70" r="1.8"/><circle cx="740" cy="120" r="2"/><circle cx="80" cy="200" r="1.5"/>
+    <circle cx="720" cy="220" r="1.8"/>
+  </g>
+
+  <!-- Constellation Heart in the Stars! -->
+  <g stroke="#FDE047" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.75" filter="url(#celestialGlow)">
+    <line x1="390" y1="90" x2="420" y2="70"/>
+    <line x1="420" y1="70" x2="440" y2="90"/>
+    <line x1="440" y1="90" x2="415" y2="125"/>
+    <line x1="415" y1="125" x2="390" y2="90"/>
+  </g>
+  <g fill="#FFFBEB" filter="url(#celestialGlow)">
+    <circle cx="390" cy="90" r="3.5"/><circle cx="420" cy="70" r="4"/><circle cx="440" cy="90" r="3.5"/><circle cx="415" cy="125" r="4"/>
+  </g>
+
+  <!-- Glowing Crescent Moon -->
+  <g transform="translate(640, 90)">
+    <circle cx="0" cy="0" r="35" fill="url(#moonGlow)"/>
+    <path d="M-10 -25 A 28 28 0 0 0 20 20 A 24 24 0 1 1 -10 -25 Z" fill="#FFFDF0" filter="url(#celestialGlow)"/>
+  </g>
+
+  <!-- Distant Glowing Hills -->
+  <path d="M-40 430 Q160 380 380 410 T840 400 L840 600 L-40 600 Z" fill="#881337" opacity="0.6"/>
+  <path d="M-40 460 Q220 420 500 450 T840 440 L840 600 L-40 600 Z" fill="#4C0519" opacity="0.8"/>
+
+  <!-- Foreground Grassy Hilltop -->
+  <path d="M-20 480 Q320 420 820 480 L820 600 L-20 600 Z" fill="url(#starlitHill)"/>
+
+  <!-- Wildflowers and Fireflies on the Hill -->
+  <g fill="#FDA4AF" opacity="0.9">
+    <circle cx="120" cy="510" r="3.5"/><circle cx="150" cy="530" r="4"/><circle cx="210" cy="505" r="3"/>
+    <circle cx="600" cy="505" r="3.5"/><circle cx="650" cy="525" r="4"/><circle cx="700" cy="510" r="3"/>
+  </g>
+  <!-- Fireflies with Warm Glow -->
+  <g fill="#FEF08A" filter="url(#celestialGlow)">
+    <circle cx="280" cy="460" r="3"/><circle cx="330" cy="480" r="2.5"/><circle cx="480" cy="470" r="3"/>
+    <circle cx="530" cy="455" r="2.5"/><circle cx="230" cy="430" r="2"/><circle cx="580" cy="430" r="2"/>
+  </g>
+
+  <!-- TWO BEST FRIENDS SITTING TOGETHER ON THE HILLTOP (Center) -->
+  <g transform="translate(355, 360)">
+    <!-- Golden Twilight Backlight Rim Glow -->
+    <ellipse cx="45" cy="50" rx="60" ry="40" fill="#FEF08A" opacity="0.3" filter="url(#softGlow5)"/>
+
+    <!-- Friend 1: Sitting Left (Khushi) -->
+    <!-- Head & Hair -->
+    <circle cx="26" cy="25" r="16" fill="#1E030B"/>
+    <!-- Flowing Hair down shoulders -->
+    <path d="M12 24 Q10 50 18 64 Q24 45 36 28 Z" fill="#3B0764"/>
+    <path d="M14 26 Q36 16 38 32 Q36 50 24 64" stroke="#F472B6" stroke-width="1.8" fill="none" opacity="0.6"/>
+    <!-- Cute hair flower -->
+    <circle cx="15" cy="22" r="4" fill="#FDA4AF"/>
+
+    <!-- Sitting Back Profile & Soft Sweater -->
+    <path d="M16 38 Q28 35 40 40 L38 85 Q26 88 12 85 Z" fill="#3B0764"/>
+    <path d="M16 38 L12 85 Q26 88 38 85 L40 40 Z" fill="#4C0519"/>
+    <!-- Cute Pink Wool Texture Line -->
+    <path d="M12 85 Q26 90 38 85" stroke="#FDA4AF" stroke-width="2.5" fill="none"/>
+
+    <!-- Sitting Folded Legs on the Grass -->
+    <ellipse cx="22" cy="90" rx="18" ry="8" fill="#1E030B"/>
+
+    <!-- Friend 2: Sitting Right (Best Friend Leaning Head on Shoulder) -->
+    <!-- Head leaning gently onto Friend 1's shoulder -->
+    <circle cx="56" cy="28" r="15" fill="#1E030B" transform="rotate(-15 56 28)"/>
+    <ellipse cx="66" cy="18" rx="8" ry="7" fill="#1E030B"/>
+    <path d="M46 30 Q68 20 68 36 Q66 52 54 64" stroke="#FDE047" stroke-width="1.8" fill="none" opacity="0.6"/>
+
+    <!-- Body -->
+    <path d="M42 40 Q55 36 68 40 L65 85 Q52 88 38 85 Z" fill="#1E030B"/>
+    <path d="M42 40 L38 85 Q52 88 65 85 L68 40 Z" fill="#701A75"/>
+    <path d="M38 85 Q52 90 65 85" stroke="#F472B6" stroke-width="2.5" fill="none"/>
+
+    <ellipse cx="58" cy="90" rx="18" ry="8" fill="#1E030B"/>
+
+    <!-- Arm around waist / Hand Holding -->
+    <path d="M30 52 Q45 60 56 54" stroke="#FDA4AF" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+    <!-- Tiny Glowing Heart floating above their heads -->
+    <path d="M45 10 C45 5 40 3 37 7 C34 3 29 5 29 10 C29 16 37 21 37 21 C37 21 45 16 45 10 Z" fill="#F43F5E" filter="url(#celestialGlow)" transform="translate(4, -5) scale(0.9)"/>
+  </g>
+
+  <!-- Blooming Pink Cherry Blossom Branches on Top Corners -->
+  <!-- Top Left Branch -->
+  <g transform="translate(0, 0)">
+    <!-- Branch wood -->
+    <path d="M-20 0 Q80 40 180 20 T310 50" stroke="#270712" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <path d="M120 28 Q160 70 210 80" stroke="#270712" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M60 18 Q80 60 110 70" stroke="#270712" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Cherry Blossoms -->
+    <g fill="url(#petalPink)">
+      <!-- Cluster 1 -->
+      <circle cx="90" cy="30" r="10"/><circle cx="102" cy="22" r="9"/><circle cx="106" cy="36" r="9"/>
+      <circle cx="95" cy="42" r="9"/><circle cx="85" cy="36" r="9"/>
+      <circle cx="96" cy="34" r="3" fill="#FEF08A"/>
+
+      <!-- Cluster 2 -->
+      <circle cx="165" cy="40" r="11"/><circle cx="178" cy="32" r="10"/><circle cx="182" cy="48" r="10"/>
+      <circle cx="170" cy="54" r="10"/><circle cx="158" cy="46" r="10"/>
+      <circle cx="171" cy="44" r="3.5" fill="#FEF08A"/>
+
+      <!-- Cluster 3 -->
+      <circle cx="210" cy="80" r="10"/><circle cx="220" cy="72" r="9"/><circle cx="224" cy="86" r="9"/>
+      <circle cx="214" cy="92" r="9"/><circle cx="204" cy="84" r="9"/>
+      <circle cx="214" cy="82" r="3" fill="#FEF08A"/>
+
+      <!-- Cluster 4 -->
+      <circle cx="290" cy="45" r="9"/><circle cx="300" cy="38" r="8"/><circle cx="304" cy="50" r="8"/>
+      <circle cx="296" cy="55" r="8"/><circle cx="286" cy="48" r="8"/>
+      <circle cx="295" cy="47" r="2.5" fill="#FEF08A"/>
+    </g>
+  </g>
+
+  <!-- Top Right Branch -->
+  <g transform="translate(800, 0) scale(-1, 1)">
+    <path d="M-20 0 Q70 30 160 15 T260 40" stroke="#270712" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M100 22 Q130 55 170 65" stroke="#270712" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+    <g fill="url(#petalPink)">
+      <circle cx="80" cy="25" r="10"/><circle cx="92" cy="17" r="9"/><circle cx="96" cy="31" r="9"/>
+      <circle cx="85" cy="37" r="9"/><circle cx="75" cy="31" r="9"/>
+      <circle cx="86" cy="29" r="3" fill="#FEF08A"/>
+
+      <circle cx="150" cy="35" r="10"/><circle cx="162" cy="27" r="9"/><circle cx="166" cy="41" r="9"/>
+      <circle cx="155" cy="47" r="9"/><circle cx="145" cy="41" r="9"/>
+      <circle cx="156" cy="39" r="3" fill="#FEF08A"/>
+    </g>
+  </g>
+
+  <!-- Falling Cherry Blossom Petals in the Wind -->
+  <g fill="url(#petalPink)" opacity="0.85">
+    <path d="M220 180 Q225 170 235 172 Q245 180 238 190 Q228 192 220 180 Z" transform="rotate(25 220 180)"/>
+    <path d="M320 220 Q325 210 335 212 Q345 220 338 230 Q328 232 320 220 Z" transform="rotate(-40 320 220)"/>
+    <path d="M490 260 Q495 250 505 252 Q515 260 508 270 Q498 272 490 260 Z" transform="rotate(15 490 260)"/>
+    <path d="M580 210 Q585 200 595 202 Q605 210 598 220 Q588 222 580 210 Z" transform="rotate(60 580 210)"/>
+    <path d="M280 320 Q285 310 295 312 Q305 320 298 330 Q288 332 280 320 Z" transform="rotate(-20 280 320)"/>
+    <path d="M520 340 Q525 330 535 332 Q545 340 538 350 Q528 352 520 340 Z" transform="rotate(35 520 340)"/>
+  </g>
+
+  <!-- Soft Frame Border -->
+  <rect width="800" height="600" fill="none" stroke="#FBCFE8" stroke-width="3" opacity="0.4"/>
+</svg>

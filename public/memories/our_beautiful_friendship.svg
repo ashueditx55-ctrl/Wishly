@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Sky Gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E9D5FF"/>
+      <stop offset="30%" stop-color="#FCE7F3"/>
+      <stop offset="60%" stop-color="#FBCFE8"/>
+      <stop offset="85%" stop-color="#FED7AA"/>
+      <stop offset="100%" stop-color="#FDE68A"/>
+    </linearGradient>
+
+    <!-- Sun Glow -->
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFBEB" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#FEF08A" stop-opacity="0.85"/>
+      <stop offset="70%" stop-color="#F472B6" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FDA4AF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Distant Hill Gradient -->
+    <linearGradient id="distHill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FB7185" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <!-- Mid Hill Gradient -->
+    <linearGradient id="midHill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FB7185" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#E11D48" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Foreground Meadow Gradient -->
+    <linearGradient id="foreMeadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#BE185D"/>
+      <stop offset="100%" stop-color="#881337"/>
+    </linearGradient>
+
+    <!-- Path Gradient -->
+    <linearGradient id="pathGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#FED7AA" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#FBCFE8"/>
+    </linearGradient>
+
+    <!-- Soft Blur -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="cloudBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+
+  <!-- Sky Background -->
+  <rect width="800" height="600" fill="url(#skyGrad)"/>
+
+  <!-- Glowing Setting Sun -->
+  <circle cx="400" cy="310" r="140" fill="url(#sunGlow)"/>
+  <circle cx="400" cy="310" r="48" fill="#FFFDF0" filter="url(#softGlow)"/>
+
+  <!-- Dreamy Clouds -->
+  <g filter="url(#cloudBlur)" opacity="0.6">
+    <ellipse cx="220" cy="220" rx="160" ry="36" fill="#FFF5F7"/>
+    <ellipse cx="280" cy="200" rx="120" ry="42" fill="#FCE7F3"/>
+    <ellipse cx="580" cy="240" rx="170" ry="40" fill="#FFF5F7"/>
+    <ellipse cx="520" cy="215" rx="130" ry="45" fill="#FED7AA"/>
+  </g>
+
+  <!-- Distant Mountain / Hills -->
+  <path d="M-50 380 Q140 310 320 340 T700 325 T850 350 L850 600 L-50 600 Z" fill="url(#distHill)"/>
+  <path d="M-30 410 Q180 350 420 380 T850 370 L850 600 L-30 600 Z" fill="url(#midHill)"/>
+
+  <!-- Sunset Light Rays / Sparkles -->
+  <g opacity="0.75">
+    <circle cx="400" cy="270" r="3.5" fill="#FFFFFF" filter="url(#softGlow)"/>
+    <circle cx="470" cy="230" r="2.5" fill="#FFFBEB"/>
+    <circle cx="330" cy="220" r="2.5" fill="#FFFBEB"/>
+    <circle cx="260" cy="280" r="2" fill="#FFFFFF"/>
+    <circle cx="530" cy="290" r="3" fill="#FFFFFF"/>
+    <circle cx="380" cy="180" r="2.5" fill="#FFFBEB"/>
+  </g>
+
+  <!-- Winding Path -->
+  <path d="M400 380 Q390 440 340 490 T260 600 L440 600 Q420 520 415 450 T405 380 Z" fill="url(#pathGrad)"/>
+
+  <!-- Foreground Landscape -->
+  <path d="M-20 460 Q120 430 290 480 L230 600 L-20 600 Z" fill="url(#foreMeadow)"/>
+  <path d="M430 475 Q600 440 820 450 L820 600 L410 600 Z" fill="url(#foreMeadow)"/>
+
+  <!-- Wildflowers along path -->
+  <g fill="#FBCFE8" opacity="0.9">
+    <circle cx="210" cy="510" r="4"/><circle cx="225" cy="525" r="3.5"/><circle cx="195" cy="540" r="5"/>
+    <circle cx="250" cy="555" r="4"/><circle cx="180" cy="490" r="3"/>
+    <circle cx="460" cy="510" r="4.5"/><circle cx="490" cy="525" r="3.5"/><circle cx="520" cy="495" r="4"/>
+    <circle cx="480" cy="560" r="5"/><circle cx="560" cy="535" r="4"/>
+  </g>
+  <g fill="#FEF08A" opacity="0.8">
+    <circle cx="215" cy="518" r="2.5"/><circle cx="200" cy="545" r="2.5"/>
+    <circle cx="470" cy="520" r="2.5"/><circle cx="510" cy="505" r="2.5"/>
+  </g>
+
+  <!-- Best Friends Silhouette / Aesthetic Walking Figure Pair -->
+  <g transform="translate(325, 345)">
+    <!-- Subtle Golden Rim Light around friends -->
+    <g filter="url(#softGlow)" opacity="0.7">
+      <ellipse cx="42" cy="75" rx="36" ry="60" fill="#FEF08A"/>
+    </g>
+
+    <!-- Friend 1 (Left: Khushi) -->
+    <!-- Head & Hair -->
+    <circle cx="24" cy="22" r="13" fill="#4C0519"/>
+    <!-- Flowing Hair catching sunset light -->
+    <path d="M12 20 Q10 42 22 52 Q18 36 28 20 Z" fill="#881337"/>
+    <path d="M22 10 Q38 12 36 26 Q36 40 28 50" stroke="#FDA4AF" stroke-width="2" fill="none" opacity="0.6"/>
+    <!-- Cute Hair ribbon -->
+    <circle cx="14" cy="18" r="3.5" fill="#FB7185"/>
+
+    <!-- Dress / Outfit (Cute soft pink silhouette) -->
+    <path d="M16 34 Q24 33 32 34 L38 82 Q24 86 10 82 Z" fill="#4C0519"/>
+    <path d="M17 38 L10 80 Q24 84 36 80 L31 38 Z" fill="#831843"/>
+    <path d="M10 80 Q24 85 38 80" stroke="#FDA4AF" stroke-width="2" fill="none"/>
+
+    <!-- Legs -->
+    <line x1="18" y1="82" x2="16" y2="114" stroke="#4C0519" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="28" y1="82" x2="30" y2="112" stroke="#4C0519" stroke-width="4.5" stroke-linecap="round"/>
+    <!-- Shoes -->
+    <ellipse cx="14" cy="115" rx="4.5" ry="2.5" fill="#FB7185"/>
+    <ellipse cx="32" cy="113" rx="4.5" ry="2.5" fill="#FB7185"/>
+
+    <!-- Friend 2 (Right: Best Friend) -->
+    <!-- Head & Bun/Hair -->
+    <circle cx="56" cy="20" r="13" fill="#4C0519"/>
+    <ellipse cx="60" cy="10" rx="6" ry="5.5" fill="#4C0519"/>
+    <path d="M50 12 Q66 14 66 28 Q64 42 58 48" stroke="#FDA4AF" stroke-width="2" fill="none" opacity="0.6"/>
+
+    <!-- Outfit (Cute dungaree/skirt) -->
+    <path d="M48 33 Q56 32 64 33 L69 82 Q56 85 43 82 Z" fill="#4C0519"/>
+    <path d="M49 38 L43 80 Q56 83 67 80 L63 38 Z" fill="#701A75"/>
+    <path d="M43 80 Q56 83 67 80" stroke="#F472B6" stroke-width="2" fill="none"/>
+
+    <!-- Legs -->
+    <line x1="50" y1="82" x2="48" y2="112" stroke="#4C0519" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="60" y1="82" x2="63" y2="114" stroke="#4C0519" stroke-width="4.5" stroke-linecap="round"/>
+    <!-- Shoes -->
+    <ellipse cx="46" cy="113" rx="4.5" ry="2.5" fill="#F472B6"/>
+    <ellipse cx="65" cy="115" rx="4.5" ry="2.5" fill="#F472B6"/>
+
+    <!-- Arms Holding Hands / Arm-in-Arm -->
+    <path d="M28 42 Q40 54 49 43" stroke="#4C0519" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M28 42 Q40 54 49 43" stroke="#FDA4AF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7"/>
+
+    <!-- Tiny Floating Heart Between Them -->
+    <path d="M38 28 C38 24 34 23 32 26 C30 23 26 24 26 28 C26 33 32 36 32 36 C32 36 38 33 38 28 Z" fill="#FB7185" filter="url(#softGlow)" transform="translate(6, -2) scale(0.8)"/>
+  </g>
+
+  <!-- Floating Sparkles & Dandelion Magic -->
+  <g fill="#FFF" opacity="0.85">
+    <!-- Little stars -->
+    <path d="M150 120 L153 128 L161 131 L153 134 L150 142 L147 134 L139 131 L147 128 Z" fill="#FFFBEB" filter="url(#softGlow)"/>
+    <path d="M680 150 L682 156 L688 158 L682 160 L680 166 L678 160 L672 158 L678 156 Z" fill="#FFFBEB" filter="url(#softGlow)"/>
+    <path d="M420 100 L421 104 L425 105 L421 106 L420 110 L419 106 L415 105 L419 104 Z" fill="#FFFFFF"/>
+    <circle cx="360" cy="460" r="2.5" fill="#FFFBEB" filter="url(#softGlow)"/>
+    <circle cx="390" cy="475" r="1.8" fill="#FFF"/>
+    <circle cx="320" cy="430" r="2" fill="#FFFBEB"/>
+  </g>
+
+  <!-- Soft Vignette Frame -->
+  <rect width="800" height="600" fill="none" stroke="#FBCFE8" stroke-width="3" opacity="0.4"/>
+</svg>

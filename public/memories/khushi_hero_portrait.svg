@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Avatar Background Gradient -->
+    <radialGradient id="avatarBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFF5F7"/>
+      <stop offset="50%" stop-color="#FCE7F3"/>
+      <stop offset="85%" stop-color="#FBCFE8"/>
+      <stop offset="100%" stop-color="#F472B6"/>
+    </radialGradient>
+
+    <!-- Tiara Gold Gradient -->
+    <linearGradient id="tiaraGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB"/>
+      <stop offset="40%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+
+    <!-- Candle Flame Glow -->
+    <radialGradient id="cupcakeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFBEB" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#FEF08A" stop-opacity="0.9"/>
+      <stop offset="80%" stop-color="#F59E0B" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="tiaraSparkle" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softFaceShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#881337" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Clip and Frame -->
+  <rect width="400" height="400" fill="url(#avatarBg)"/>
+
+  <!-- Golden Ambient Glow Halo -->
+  <circle cx="200" cy="180" r="140" fill="#FFF" opacity="0.65" filter="url(#tiaraSparkle)"/>
+
+  <!-- Floating Sparkles & Heart Bubbles -->
+  <g fill="#FB7185" opacity="0.75">
+    <path d="M70 120 C70 114 64 112 60 116 C56 112 50 114 50 120 C50 128 60 132 60 132 C60 132 70 128 70 120 Z" fill="#F43F5E"/>
+    <path d="M340 100 C340 94 334 92 330 96 C326 92 320 94 320 100 C320 108 330 112 330 112 C330 112 340 108 340 100 Z" fill="#F43F5E"/>
+    <path d="M80 260 C80 256 75 254 72 257 C69 254 64 256 64 260 C64 266 72 269 72 269 C72 269 80 266 80 260 Z" fill="#FB7185"/>
+    <path d="M330 250 C330 246 325 244 322 247 C319 244 314 246 314 250 C314 256 322 259 322 259 C322 259 330 256 330 250 Z" fill="#FB7185"/>
+  </g>
+  <!-- Gold Stars -->
+  <g fill="#FDE047" opacity="0.9" filter="url(#tiaraSparkle)">
+    <polygon points="100,70 102,75 107,77 102,79 100,84 98,79 93,77 98,75"/>
+    <polygon points="300,75 302,80 307,82 302,84 300,89 298,84 293,82 298,80"/>
+    <polygon points="60,190 62,194 66,195 62,196 60,200 58,196 54,195 58,194"/>
+    <polygon points="340,180 342,184 346,185 342,186 340,190 338,186 334,185 338,184"/>
+  </g>
+
+  <!-- BIRTHDAY GIRL (KHUSHI) PORTRAIT -->
+  <g transform="translate(200, 190)" filter="url(#softFaceShadow)">
+    <!-- Long Flowing Hair (Back) -->
+    <path d="M-85 -10 Q-95 100 -40 160 Q0 180 40 160 Q95 100 85 -10 Z" fill="#3B0764"/>
+    <path d="M-80 10 Q-90 90 -45 150 Q0 170 45 150 Q90 90 80 10 Z" fill="#260443"/>
+
+    <!-- Shoulders & Ruffled Pink Party Dress -->
+    <path d="M-65 95 Q0 90 65 95 L80 190 L-80 190 Z" fill="#FB7185"/>
+    <!-- Dress Ruffle Collar -->
+    <path d="M-65 95 Q-45 115 -25 98 Q0 115 25 98 Q45 115 65 95 Q40 85 0 85 Q-40 85 -65 95 Z" fill="#FFF"/>
+
+    <!-- Neck -->
+    <rect x="-14" y="65" width="28" height="30" rx="6" fill="#FED7AA"/>
+    <!-- Pearl Necklace with Heart Pendant -->
+    <path d="M-22 86 Q0 98 22 86" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <circle cx="0" cy="94" r="4.5" fill="#E11D48"/>
+
+    <!-- Face -->
+    <ellipse cx="0" cy="30" rx="55" ry="58" fill="#FFEDD5"/>
+    <path d="M-52 18 Q0 85 52 18 Q40 -30 0 -35 Q-40 -30 -52 18 Z" fill="#FFEDD5"/>
+
+    <!-- Ears & Cute Pearl Earrings -->
+    <circle cx="-56" cy="32" r="10" fill="#FED7AA"/>
+    <circle cx="-57" cy="38" r="4.5" fill="#FFF" stroke="#FB7185" stroke-width="1"/>
+    <circle cx="56" cy="32" r="10" fill="#FED7AA"/>
+    <circle cx="57" cy="38" r="4.5" fill="#FFF" stroke="#FB7185" stroke-width="1"/>
+
+    <!-- Front Hair & Soft Bangs -->
+    <path d="M-55 10 Q-50 -55 0 -55 Q50 -55 55 10 Q40 -15 25 -2 Q10 -25 -5 -5 Q-20 -25 -35 -5 Q-48 -15 -55 10 Z" fill="#260443"/>
+    <!-- Hair Highlights -->
+    <path d="M-30 -40 Q0 -50 30 -40" stroke="#701A75" stroke-width="2.5" fill="none" opacity="0.6"/>
+
+    <!-- Cute Birthday Princess Tiara! -->
+    <g transform="translate(0, -56)" filter="url(#tiaraSparkle)">
+      <!-- Tiara Base Arc -->
+      <path d="M-34 10 Q0 -2 34 10" stroke="url(#tiaraGold)" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <!-- Tiara Spikes/Crown points -->
+      <polygon points="-30,8 -24,-6 -18,6" fill="url(#tiaraGold)"/>
+      <polygon points="-16,5 -8,-18 0,3" fill="url(#tiaraGold)"/>
+      <polygon points="0,3 8,-18 16,5" fill="url(#tiaraGold)"/>
+      <polygon points="18,6 24,-6 30,8" fill="url(#tiaraGold)"/>
+      <!-- Center Jewel (Ruby Pink Heart) -->
+      <circle cx="0" cy="-6" r="5" fill="#E11D48"/>
+      <circle cx="0" cy="-6" r="2" fill="#FFF"/>
+      <!-- Little pearl tips -->
+      <circle cx="-24" cy="-6" r="2.5" fill="#FFF"/>
+      <circle cx="-8" cy="-18" r="3" fill="#FFF"/>
+      <circle cx="8" cy="-18" r="3" fill="#FFF"/>
+      <circle cx="24" cy="-6" r="2.5" fill="#FFF"/>
+    </g>
+
+    <!-- Eyebrows -->
+    <path d="M-36 12 Q-22 4 -12 12" stroke="#4C0519" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M12 12 Q22 4 36 12" stroke="#4C0519" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Eyes (Big, Expressive, Sparkly Dark Eyes) -->
+    <ellipse cx="-24" cy="26" rx="9" ry="11" fill="#1E030B"/>
+    <ellipse cx="24" cy="26" rx="9" ry="11" fill="#1E030B"/>
+    <!-- Highlights in Eyes -->
+    <circle cx="-26" cy="22" r="3.5" fill="#FFF"/>
+    <circle cx="-21" cy="29" r="1.8" fill="#FFF"/>
+    <circle cx="22" cy="22" r="3.5" fill="#FFF"/>
+    <circle cx="27" cy="29" r="1.8" fill="#FFF"/>
+    <!-- Eyelashes -->
+    <path d="M-34 20 Q-24 16 -14 20" stroke="#1E030B" stroke-width="2.5" fill="none"/>
+    <path d="M-34 19 L-37 15 M-29 17 L-30 13" stroke="#1E030B" stroke-width="1.8"/>
+    <path d="M14 20 Q24 16 34 20" stroke="#1E030B" stroke-width="2.5" fill="none"/>
+    <path d="M34 19 L37 15 M29 17 L30 13" stroke="#1E030B" stroke-width="1.8"/>
+
+    <!-- Cute Soft Rose Blushing Cheeks -->
+    <ellipse cx="-32" cy="40" rx="12" ry="7" fill="#FDA4AF" opacity="0.75"/>
+    <ellipse cx="32" cy="40" rx="12" ry="7" fill="#FDA4AF" opacity="0.75"/>
+
+    <!-- Cute Petite Nose -->
+    <path d="M-2 36 Q0 38 2 36" stroke="#FB7185" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- Beautiful Joyful Smile -->
+    <path d="M-15 48 Q0 66 15 48" stroke="#BE123C" stroke-width="3" fill="#E11D48" stroke-linecap="round"/>
+    <path d="M-10 49 Q0 56 10 49" fill="#FFF"/>
+
+    <!-- Birthday Cupcake Held in Hands (Bottom Center) -->
+    <g transform="translate(0, 115)">
+      <!-- Hands holding cupcake -->
+      <circle cx="-24" cy="18" r="9" fill="#FED7AA"/>
+      <circle cx="24" cy="18" r="9" fill="#FED7AA"/>
+      <!-- Cupcake Liner -->
+      <polygon points="-16,28 -12,48 12,48 16,28" fill="#F472B6" stroke="#E11D48" stroke-width="1.5"/>
+      <!-- Fluffy Pink Frosting -->
+      <ellipse cx="0" cy="26" rx="19" ry="11" fill="#FFF"/>
+      <ellipse cx="0" cy="20" rx="15" ry="9" fill="#FDA4AF"/>
+      <circle cx="0" cy="14" r="4.5" fill="#E11D48"/>
+      <!-- Candle on Cupcake -->
+      <rect x="-1.5" y="0" width="3" height="14" rx="1" fill="#FEF08A"/>
+      <!-- Candle Flame -->
+      <circle cx="0" cy="-6" r="14" fill="url(#cupcakeGlow)"/>
+      <ellipse cx="0" cy="-6" rx="2.5" ry="5" fill="#FFFBEB" filter="url(#tiaraSparkle)"/>
+    </g>
+  </g>
+
+  <!-- Circular Border with Soft Rose Glow -->
+  <circle cx="200" cy="200" r="195" fill="none" stroke="#FCE7F3" stroke-width="6"/>
+  <circle cx="200" cy="200" r="192" fill="none" stroke="#FDA4AF" stroke-width="2" opacity="0.8"/>
+</svg>

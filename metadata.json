@@ -1,0 +1,6 @@
+{
+  "name": "Wishly - A Birthday Surprise",
+  "description": "A beautiful, premium personal birthday website created with love, featuring a secret passcode unlock, heartfelt messages, memory gallery, cute surprises, and celebration tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

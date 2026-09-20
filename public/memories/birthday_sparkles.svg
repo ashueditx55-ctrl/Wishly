@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Dreamy Room Gradient -->
+    <linearGradient id="partyRoomBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4A0429"/>
+      <stop offset="35%" stop-color="#831843"/>
+      <stop offset="70%" stop-color="#BE185D"/>
+      <stop offset="100%" stop-color="#F43F5E"/>
+    </linearGradient>
+
+    <!-- Table Surface Gradient -->
+    <linearGradient id="tableGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF1F2"/>
+      <stop offset="100%" stop-color="#FCE7F3"/>
+    </linearGradient>
+
+    <!-- Cake Frosting Gradients -->
+    <linearGradient id="cakeFrostingPink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FBCFE8"/>
+      <stop offset="50%" stop-color="#FCE7F3"/>
+      <stop offset="100%" stop-color="#FDA4AF"/>
+    </linearGradient>
+
+    <linearGradient id="cakeFrostingTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#FCE7F3"/>
+    </linearGradient>
+
+    <!-- Glowing Candle Flame -->
+    <radialGradient id="candleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFBEB" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#FEF08A" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#F59E0B" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Balloon Gradient -->
+    <radialGradient id="balloonGlow" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFF0F5" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#F472B6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#BE185D" stop-opacity="0.9"/>
+    </radialGradient>
+
+    <!-- Filters -->
+    <filter id="flameBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="bokehBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+
+    <filter id="sparkleGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#partyRoomBg)"/>
+
+  <!-- Dreamy Fairy Light Bokeh Circles in Background -->
+  <g filter="url(#bokehBlur)" opacity="0.45">
+    <circle cx="120" cy="140" r="45" fill="#FEF08A"/>
+    <circle cx="280" cy="90" r="60" fill="#FDA4AF"/>
+    <circle cx="480" cy="120" r="50" fill="#FEF08A"/>
+    <circle cx="680" cy="160" r="65" fill="#FBCFE8"/>
+    <circle cx="200" cy="240" r="40" fill="#FEF08A"/>
+    <circle cx="600" cy="220" r="55" fill="#FDA4AF"/>
+  </g>
+
+  <!-- Hanging Party Bunting Banner at Top -->
+  <path d="M-20 60 Q200 110 400 70 T820 60" stroke="#FDE047" stroke-width="2" fill="none" opacity="0.6"/>
+  <!-- Bunting Pennants -->
+  <g fill="#FDA4AF" stroke="#FFF" stroke-width="1.5">
+    <polygon points="50,75 80,78 65,115" fill="#F472B6"/>
+    <polygon points="110,83 140,86 125,123" fill="#FEF08A"/>
+    <polygon points="170,89 200,91 185,128" fill="#F472B6"/>
+    <polygon points="230,92 260,92 245,130" fill="#FDA4AF"/>
+    <polygon points="290,90 320,88 305,126" fill="#FEF08A"/>
+    <polygon points="350,84 380,80 365,118" fill="#F472B6"/>
+    <polygon points="410,76 440,73 425,112" fill="#FDA4AF"/>
+    <polygon points="470,71 500,70 485,108" fill="#FEF08A"/>
+    <polygon points="530,70 560,72 545,110" fill="#F472B6"/>
+    <polygon points="590,74 620,77 605,115" fill="#FDA4AF"/>
+    <polygon points="650,80 680,84 665,122" fill="#FEF08A"/>
+    <polygon points="710,87 740,91 725,128" fill="#F472B6"/>
+  </g>
+
+  <!-- Floating Heart & Round Balloons (Left & Right) -->
+  <!-- Left Balloons -->
+  <g transform="translate(100, 180)">
+    <path d="M40 90 Q30 180 50 250" stroke="#FEF08A" stroke-width="1.5" fill="none" opacity="0.7"/>
+    <ellipse cx="40" cy="70" rx="42" ry="52" fill="url(#balloonGlow)"/>
+    <polygon points="36,122 44,122 40,128" fill="#BE185D"/>
+    <!-- Highlight -->
+    <ellipse cx="26" cy="50" rx="10" ry="16" fill="#FFF" opacity="0.5" transform="rotate(-20 26 50)"/>
+  </g>
+  <!-- Right Balloons -->
+  <g transform="translate(620, 160)">
+    <path d="M50 90 Q70 170 40 260" stroke="#FEF08A" stroke-width="1.5" fill="none" opacity="0.7"/>
+    <ellipse cx="50" cy="70" rx="46" ry="56" fill="url(#balloonGlow)"/>
+    <polygon points="46,126 54,126 50,132" fill="#BE185D"/>
+    <ellipse cx="36" cy="48" rx="12" ry="18" fill="#FFF" opacity="0.5" transform="rotate(-20 36 48)"/>
+  </g>
+
+  <!-- Table Surface & Draped Pastel Tablecloth -->
+  <path d="M0 450 Q400 435 800 450 L800 600 L0 600 Z" fill="url(#tableGrad)"/>
+  <path d="M0 450 Q400 435 800 450" stroke="#FDA4AF" stroke-width="3" fill="none"/>
+
+  <!-- Vintage Pedestal Cake Stand -->
+  <g transform="translate(400, 470)">
+    <!-- Base -->
+    <ellipse cx="0" cy="20" rx="110" ry="14" fill="#E2E8F0"/>
+    <ellipse cx="0" cy="18" rx="105" ry="12" fill="#FFFFFF"/>
+    <!-- Pillar -->
+    <path d="M-18 18 L-10 -35 L10 -35 L18 18 Z" fill="#CBD5E1"/>
+    <path d="M-12 18 L-6 -35 L6 -35 L12 18 Z" fill="#F1F5F9"/>
+    <!-- Top Plate -->
+    <ellipse cx="0" cy="-35" rx="170" ry="24" fill="#CBD5E1"/>
+    <ellipse cx="0" cy="-38" rx="165" ry="22" fill="#FFFFFF"/>
+    <!-- Delicate Lace scalloped rim -->
+    <path d="M-160 -38 Q-140 -26 -120 -38 Q-100 -26 -80 -38 Q-60 -26 -40 -38 Q-20 -26 0 -38 Q20 -26 40 -38 Q60 -26 80 -38 Q100 -26 120 -38 Q140 -26 160 -38" stroke="#FBCFE8" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- THE MAGICAL BIRTHDAY CAKE -->
+  <g transform="translate(400, 420)">
+    <!-- Cake Tier 1 (Bottom Tier) -->
+    <!-- Shadow under tier 1 -->
+    <ellipse cx="0" cy="-5" rx="130" ry="24" fill="#BE185D" opacity="0.2"/>
+    <!-- Body -->
+    <path d="M-130 -85 L-130 -5 Q0 25 130 -5 L130 -85 Z" fill="url(#cakeFrostingPink)"/>
+    <!-- Top Ellipse -->
+    <ellipse cx="0" cy="-85" rx="130" ry="22" fill="url(#cakeFrostingTop)"/>
+    <!-- Delicate Drips & Pearls on Tier 1 -->
+    <path d="M-130 -85 Q-115 -60 -105 -82 Q-90 -55 -75 -84 Q-50 -50 -30 -85 Q-10 -60 10 -84 Q30 -52 50 -84 Q75 -58 90 -83 Q110 -60 130 -85" fill="#FFF" stroke="#FCE7F3" stroke-width="1.5"/>
+    <g fill="#FB7185">
+      <circle cx="-110" cy="-45" r="3.5"/><circle cx="-70" cy="-40" r="3.5"/><circle cx="-30" cy="-38" r="3.5"/>
+      <circle cx="10" cy="-38" r="3.5"/><circle cx="50" cy="-40" r="3.5"/><circle cx="90" cy="-44" r="3.5"/>
+    </g>
+
+    <!-- Cake Tier 2 (Top Tier) -->
+    <path d="M-85 -165 L-85 -95 Q0 -75 85 -95 L85 -165 Z" fill="url(#cakeFrostingPink)"/>
+    <ellipse cx="0" cy="-165" rx="85" ry="16" fill="url(#cakeFrostingTop)"/>
+    <!-- Drips on Tier 2 -->
+    <path d="M-85 -165 Q-70 -145 -60 -163 Q-40 -138 -20 -164 Q0 -142 20 -164 Q45 -140 60 -163 Q75 -148 85 -165" fill="#FFF"/>
+
+    <!-- Macarons & Strawberry Toppings on Cake -->
+    <!-- Strawberries -->
+    <g transform="translate(-45, -182)">
+      <path d="M0 0 C-10 -15 10 -25 14 -8 C18 5 5 12 0 0 Z" fill="#E11D48"/>
+      <polygon points="4,-16 9,-12 14,-17 12,-10 17,-12" fill="#15803D"/>
+    </g>
+    <g transform="translate(30, -180)">
+      <path d="M0 0 C-10 -15 10 -25 14 -8 C18 5 5 12 0 0 Z" fill="#E11D48"/>
+      <polygon points="4,-16 9,-12 14,-17 12,-10 17,-12" fill="#15803D"/>
+    </g>
+    <!-- Pink Macaron in Center -->
+    <g transform="translate(-14, -180)">
+      <ellipse cx="14" cy="5" rx="14" ry="7" fill="#F472B6"/>
+      <rect x="0" y="3" width="28" height="4" fill="#FFF"/>
+      <ellipse cx="14" cy="2" rx="14" ry="7" fill="#FDA4AF"/>
+    </g>
+
+    <!-- GOLDEN CANDLES WITH GLOWING FLAMES -->
+    <!-- Candle 1 (Left) -->
+    <g transform="translate(-30, -165)">
+      <rect x="-3" y="-55" width="6" height="55" rx="2" fill="#FEF08A" stroke="#F59E0B" stroke-width="1"/>
+      <line x1="0" y1="-55" x2="0" y2="-62" stroke="#451A03" stroke-width="1.5"/>
+      <!-- Glowing Flame -->
+      <circle cx="0" cy="-72" r="26" fill="url(#candleGlow)"/>
+      <path d="M0 -84 C-6 -75 -6 -66 0 -62 C6 -66 6 -75 0 -84 Z" fill="#FEF08A" filter="url(#flameBlur)"/>
+      <ellipse cx="0" cy="-68" rx="2.5" ry="5" fill="#FFF"/>
+    </g>
+
+    <!-- Candle 2 (Center - Tallest) -->
+    <g transform="translate(0, -165)">
+      <rect x="-3.5" y="-68" width="7" height="68" rx="2" fill="#FEF08A" stroke="#F59E0B" stroke-width="1"/>
+      <!-- Spiral Pink Stripe -->
+      <path d="M-3 -60 L3 -55 M-3 -45 L3 -40 M-3 -30 L3 -25 M-3 -15 L3 -10" stroke="#FB7185" stroke-width="1.8"/>
+      <line x1="0" y1="-68" x2="0" y2="-76" stroke="#451A03" stroke-width="1.5"/>
+      <!-- Grand Flame -->
+      <circle cx="0" cy="-88" r="32" fill="url(#candleGlow)"/>
+      <path d="M0 -102 C-7 -92 -7 -80 0 -76 C7 -80 7 -92 0 -102 Z" fill="#FFFBEB" filter="url(#flameBlur)"/>
+      <ellipse cx="0" cy="-84" rx="3.5" ry="7" fill="#FFF"/>
+    </g>
+
+    <!-- Candle 3 (Right) -->
+    <g transform="translate(30, -165)">
+      <rect x="-3" y="-55" width="6" height="55" rx="2" fill="#FEF08A" stroke="#F59E0B" stroke-width="1"/>
+      <line x1="0" y1="-55" x2="0" y2="-62" stroke="#451A03" stroke-width="1.5"/>
+      <circle cx="0" cy="-72" r="26" fill="url(#candleGlow)"/>
+      <path d="M0 -84 C-6 -75 -6 -66 0 -62 C6 -66 6 -75 0 -84 Z" fill="#FEF08A" filter="url(#flameBlur)"/>
+      <ellipse cx="0" cy="-68" rx="2.5" ry="5" fill="#FFF"/>
+    </g>
+  </g>
+
+  <!-- Sparkling Gold Stars & Light Rays Everywhere -->
+  <g fill="#FEF08A" opacity="0.95" filter="url(#sparkleGlow)">
+    <!-- 4-point star near center -->
+    <path d="M400 130 L404 142 L416 146 L404 150 L400 162 L396 150 L384 146 L396 142 Z"/>
+    <path d="M260 210 L262 218 L270 220 L262 222 L260 230 L258 222 L250 220 L258 218 Z"/>
+    <path d="M530 200 L532 208 L540 210 L532 212 L530 220 L528 212 L520 210 L528 208 Z"/>
+    <path d="M330 290 L332 295 L337 297 L332 299 L330 304 L328 299 L323 297 L328 295 Z"/>
+    <path d="M470 280 L472 285 L477 287 L472 289 L470 294 L468 289 L463 287 L468 285 Z"/>
+  </g>
+
+  <!-- Sweet Script Badge on Top: "Make a Wish!" -->
+  <g transform="translate(400, 105)">
+    <rect x="-95" y="-16" width="190" height="32" rx="16" fill="#FFF" opacity="0.95" stroke="#F472B6" stroke-width="1.5" filter="url(#sparkleGlow)"/>
+    <text x="0" y="5" font-family="'Caveat', cursive, sans-serif" font-size="20" font-weight="bold" fill="#BE185D" text-anchor="middle">
+      ✨ Make a Wish, Khushi! ✨
+    </text>
+  </g>
+
+  <!-- Frame border -->
+  <rect width="800" height="600" fill="none" stroke="#FBCFE8" stroke-width="3" opacity="0.4"/>
+</svg>

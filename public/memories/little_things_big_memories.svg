@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Cozy Soft Linen Background -->
+    <linearGradient id="cozyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5F7"/>
+      <stop offset="50%" stop-color="#FDF2F8"/>
+      <stop offset="100%" stop-color="#FCE7F3"/>
+    </linearGradient>
+
+    <!-- Warm Fairy Lights Glow -->
+    <radialGradient id="fairyGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFBEB" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#FEF08A" stop-opacity="0.8"/>
+      <stop offset="80%" stop-color="#FDE047" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#FDE047" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Flatlay Drop Shadow -->
+    <filter id="flatlayShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="4" dy="8" stdDeviation="6" flood-color="#881337" flood-opacity="0.12"/>
+    </filter>
+
+    <filter id="lightGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Linen Background Texture -->
+  <rect width="800" height="600" fill="url(#cozyBg)"/>
+
+  <!-- Subtle Linen Weave Grid -->
+  <g stroke="#F472B6" stroke-width="0.5" opacity="0.08">
+    <line x1="0" y1="50" x2="800" y2="50"/><line x1="0" y1="100" x2="800" y2="100"/><line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="200" x2="800" y2="200"/><line x1="0" y1="250" x2="800" y2="250"/><line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/><line x1="0" y1="400" x2="800" y2="400"/><line x1="0" y1="450" x2="800" y2="450"/>
+    <line x1="0" y1="500" x2="800" y2="500"/><line x1="0" y1="550" x2="800" y2="550"/>
+    <line x1="50" y1="0" x2="50" y2="600"/><line x1="100" y1="0" x2="100" y2="600"/><line x1="150" y1="0" x2="150" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="600"/><line x1="250" y1="0" x2="250" y2="600"/><line x1="300" y1="0" x2="300" y2="600"/>
+    <line x1="350" y1="0" x2="350" y2="600"/><line x1="400" y1="0" x2="400" y2="600"/><line x1="450" y1="0" x2="450" y2="600"/>
+    <line x1="500" y1="0" x2="500" y2="600"/><line x1="550" y1="0" x2="550" y2="600"/><line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="650" y1="0" x2="650" y2="600"/><line x1="700" y1="0" x2="700" y2="600"/><line x1="750" y1="0" x2="750" y2="600"/>
+  </g>
+
+  <!-- Winding Fairy Lights Wire (Across the flatlay) -->
+  <path d="M-20 180 Q160 120 280 240 T540 180 T760 320 T840 260" stroke="#CBD5E1" stroke-width="1.8" fill="none" opacity="0.6"/>
+
+  <!-- Fairy Light Bulbs & Glowing Halos -->
+  <g>
+    <!-- Light 1 -->
+    <circle cx="90" cy="155" r="28" fill="url(#fairyGlow)"/>
+    <circle cx="90" cy="155" r="5" fill="#FFFBEB" filter="url(#lightGlow)"/>
+    <!-- Light 2 -->
+    <circle cx="210" cy="180" r="30" fill="url(#fairyGlow)"/>
+    <circle cx="210" cy="180" r="5" fill="#FFFBEB" filter="url(#lightGlow)"/>
+    <!-- Light 3 -->
+    <circle cx="340" cy="230" r="32" fill="url(#fairyGlow)"/>
+    <circle cx="340" cy="230" r="5.5" fill="#FFFBEB" filter="url(#lightGlow)"/>
+    <!-- Light 4 -->
+    <circle cx="480" cy="185" r="30" fill="url(#fairyGlow)"/>
+    <circle cx="480" cy="185" r="5" fill="#FFFBEB" filter="url(#lightGlow)"/>
+    <!-- Light 5 -->
+    <circle cx="610" cy="230" r="28" fill="url(#fairyGlow)"/>
+    <circle cx="610" cy="230" r="5" fill="#FFFBEB" filter="url(#lightGlow)"/>
+    <!-- Light 6 -->
+    <circle cx="730" cy="300" r="30" fill="url(#fairyGlow)"/>
+    <circle cx="730" cy="300" r="5.5" fill="#FFFBEB" filter="url(#lightGlow)"/>
+  </g>
+
+  <!-- 1. Handwritten Love Letter Paper (Center Left) -->
+  <g transform="translate(180, 110) rotate(-6)" filter="url(#flatlayShadow)">
+    <rect x="0" y="0" width="220" height="290" rx="8" fill="#FFFDF8" stroke="#FCE7F3" stroke-width="1"/>
+    <!-- Subtle ruled paper lines -->
+    <g stroke="#FBCFE8" stroke-width="1" opacity="0.6">
+      <line x1="20" y1="45" x2="200" y2="45"/><line x1="20" y1="75" x2="200" y2="75"/><line x1="20" y1="105" x2="200" y2="105"/>
+      <line x1="20" y1="135" x2="200" y2="135"/><line x1="20" y1="165" x2="200" y2="165"/><line x1="20" y1="195" x2="200" y2="195"/>
+      <line x1="20" y1="225" x2="200" y2="225"/><line x1="20" y1="255" x2="200" y2="255"/>
+    </g>
+    <!-- Handwritten Text in Script Font -->
+    <text x="24" y="38" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="bold" fill="#BE185D">Dear Khushi,</text>
+    <text x="24" y="68" font-family="'Caveat', cursive, sans-serif" font-size="16" fill="#475569">Thank you for all the</text>
+    <text x="24" y="98" font-family="'Caveat', cursive, sans-serif" font-size="16" fill="#475569">late-night talks, the</text>
+    <text x="24" y="128" font-family="'Caveat', cursive, sans-serif" font-size="16" fill="#475569">endless laughter &amp; every</text>
+    <text x="24" y="158" font-family="'Caveat', cursive, sans-serif" font-size="16" fill="#475569">single little sweet thing.</text>
+    <text x="24" y="188" font-family="'Caveat', cursive, sans-serif" font-size="16" fill="#475569">You mean the world!</text>
+    <text x="24" y="240" font-family="'Caveat', cursive, sans-serif" font-size="18" font-weight="bold" fill="#E11D48">Forever besties ❤️</text>
+    
+    <!-- Mini Pressed Blossom on the letter corner -->
+    <circle cx="190" cy="30" r="10" fill="#FDA4AF" opacity="0.9"/>
+    <circle cx="190" cy="30" r="3" fill="#FEF08A"/>
+  </g>
+
+  <!-- 2. Pastel Pink Envelope with Heart Wax Seal (Center) -->
+  <g transform="translate(360, 220) rotate(8)" filter="url(#flatlayShadow)">
+    <rect x="0" y="0" width="220" height="150" rx="8" fill="#FDF2F8" stroke="#F472B6" stroke-width="1.5"/>
+    <!-- Envelope flaps -->
+    <polygon points="0,0 110,80 220,0" fill="#FCE7F3" stroke="#F472B6" stroke-width="1"/>
+    <polygon points="0,150 110,80 220,150" fill="#FDF2F8" opacity="0.8"/>
+    <!-- Rose Heart Wax Seal -->
+    <circle cx="110" cy="80" r="22" fill="#E11D48" filter="url(#flatlayShadow)"/>
+    <circle cx="110" cy="80" r="18" fill="#BE123C"/>
+    <!-- Heart in Wax -->
+    <path d="M110 84 C110 77 103 75 99 80 C95 75 88 77 88 84 C88 92 99 98 99 98 C99 98 110 92 110 84 Z" fill="#FDA4AF" transform="translate(11, -7) scale(0.9)"/>
+  </g>
+
+  <!-- 3. Polaroid Photo 1: Friendship Coffee / Tea (Top Right) -->
+  <g transform="translate(520, 80) rotate(12)" filter="url(#flatlayShadow)">
+    <rect x="0" y="0" width="160" height="195" rx="5" fill="#FFFFFF" stroke="#FBCFE8" stroke-width="1"/>
+    <rect x="12" y="12" width="136" height="136" rx="3" fill="#FFF1F2"/>
+    <!-- Coffee Cups in Polaroid -->
+    <circle cx="60" cy="75" r="26" fill="#FCE7F3"/>
+    <circle cx="60" cy="75" r="20" fill="#78350F"/>
+    <circle cx="60" cy="75" r="16" fill="#B45309"/>
+    <!-- Latte Art Heart -->
+    <path d="M60 76 C60 72 56 71 54 73 C52 71 48 72 48 76 C48 80 54 83 54 83 C54 83 60 80 60 76 Z" fill="#FFFDF0" transform="translate(6, -2) scale(0.9)"/>
+
+    <circle cx="100" cy="85" r="24" fill="#FDF2F8"/>
+    <circle cx="100" cy="85" r="18" fill="#78350F"/>
+    <circle cx="100" cy="85" r="14" fill="#F472B6"/>
+    <!-- Caption on Polaroid -->
+    <text x="80" y="175" font-family="'Caveat', cursive, sans-serif" font-size="17" font-weight="bold" fill="#64748B" text-anchor="middle">Our Coffee Dates ☕</text>
+    <!-- Cute Washi Tape at Top -->
+    <rect x="50" y="-8" width="60" height="18" rx="2" fill="#FDA4AF" opacity="0.85" transform="rotate(-3 80 0)"/>
+  </g>
+
+  <!-- 4. Polaroid Photo 2: Tulip Flowers (Bottom Left) -->
+  <g transform="translate(80, 310) rotate(-14)" filter="url(#flatlayShadow)">
+    <rect x="0" y="0" width="155" height="190" rx="5" fill="#FFFFFF" stroke="#FBCFE8" stroke-width="1"/>
+    <rect x="12" y="12" width="131" height="130" rx="3" fill="#FDF2F8"/>
+    <!-- Cute Pink Tulips in Polaroid -->
+    <path d="M50 110 Q58 80 65 50" stroke="#34D399" stroke-width="3" fill="none"/>
+    <path d="M80 115 Q76 85 75 55" stroke="#34D399" stroke-width="3" fill="none"/>
+    <ellipse cx="65" cy="46" rx="12" ry="16" fill="#F43F5E"/>
+    <ellipse cx="76" cy="50" rx="12" ry="16" fill="#FB7185"/>
+    <text x="77" y="168" font-family="'Caveat', cursive, sans-serif" font-size="16" font-weight="bold" fill="#64748B" text-anchor="middle">Pink Tulips 🌷</text>
+    <rect x="50" y="-8" width="55" height="16" rx="2" fill="#FDE047" opacity="0.85"/>
+  </g>
+
+  <!-- 5. Cute Gift Box with Silk Ribbon (Bottom Right) -->
+  <g transform="translate(500, 360) rotate(-5)" filter="url(#flatlayShadow)">
+    <!-- Box Body -->
+    <rect x="20" y="40" width="150" height="120" rx="10" fill="#FCE7F3" stroke="#F472B6" stroke-width="1.5"/>
+    <rect x="12" y="30" width="166" height="32" rx="8" fill="#F472B6"/>
+    <!-- Vertical Ribbon -->
+    <rect x="85" y="30" width="20" height="130" fill="#E11D48"/>
+    <!-- Big Satin Bow -->
+    <!-- Left Loop -->
+    <path d="M95 32 C65 5 45 25 85 32 Z" fill="#E11D48"/>
+    <path d="M95 32 C72 12 58 24 86 32 Z" fill="#FDA4AF"/>
+    <!-- Right Loop -->
+    <path d="M95 32 C125 5 145 25 105 32 Z" fill="#E11D48"/>
+    <path d="M95 32 C118 12 132 24 104 32 Z" fill="#FDA4AF"/>
+    <!-- Knot -->
+    <circle cx="95" cy="32" r="9" fill="#BE123C"/>
+    <!-- Ribbon Tails -->
+    <path d="M90 35 Q75 60 70 85 Q80 75 92 80 Z" fill="#E11D48"/>
+    <path d="M100 35 Q115 60 120 85 Q110 75 98 80 Z" fill="#E11D48"/>
+  </g>
+
+  <!-- 6. Scattered Dried Rose Petals & Little Heart Charms -->
+  <g fill="#F43F5E" opacity="0.85">
+    <ellipse cx="160" cy="80" rx="12" ry="7" transform="rotate(25 160 80)"/>
+    <ellipse cx="440" cy="90" rx="14" ry="8" transform="rotate(-40 440 90)"/>
+    <ellipse cx="320" cy="460" rx="13" ry="8" transform="rotate(15 320 460)"/>
+    <ellipse cx="410" cy="490" rx="11" ry="7" transform="rotate(-20 410 490)"/>
+    <ellipse cx="710" cy="480" rx="12" ry="7" transform="rotate(50 710 480)"/>
+    <ellipse cx="270" cy="520" rx="10" ry="6" transform="rotate(-30 270 520)"/>
+  </g>
+
+  <!-- Golden Sparkles -->
+  <g fill="#FBBF24" opacity="0.9">
+    <polygon points="120,240 123,247 130,250 123,253 120,260 117,253 110,250 117,247" filter="url(#lightGlow)"/>
+    <polygon points="460,330 462,336 468,338 462,340 460,346 458,340 452,338 458,336" filter="url(#lightGlow)"/>
+    <polygon points="680,180 682,185 687,187 682,189 680,194 678,189 673,187 678,185" filter="url(#lightGlow)"/>
+  </g>
+
+  <!-- Aesthetic Frame Border -->
+  <rect width="800" height="600" fill="none" stroke="#FBCFE8" stroke-width="3" opacity="0.4"/>
+</svg>
